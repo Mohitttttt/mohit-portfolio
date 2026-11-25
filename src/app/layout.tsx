@@ -12,14 +12,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://mohit-portfolio-pi.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: {
     default: "Mohit Kumar Singh | Software Engineer & AI Portfolio",
     template: "%s | Mohit Kumar Singh",
   },
 
   description:
-    "Explore the portfolio of Mohit Kumar Singh, Computer Science master's student at Karlsruhe Institute of Technology (KIT), interested in software engineering, backend development, artificial intelligence and intelligent applications.",
+    "Explore Mohit Kumar Singh's portfolio featuring software engineering, backend development, artificial intelligence and projects developed alongside his Computer Science studies at KIT Karlsruhe.",
 
   applicationName: "Mohit Kumar Singh Portfolio",
 
@@ -30,30 +34,36 @@ export const metadata: Metadata = {
   ],
 
   creator: "Mohit Kumar Singh",
+  publisher: "Mohit Kumar Singh",
+
+  alternates: {
+    canonical: "/",
+  },
 
   keywords: [
     "Mohit Kumar Singh",
     "Software Engineer",
     "AI Engineer",
     "Computer Science",
-    "Karlsruhe Institute of Technology",
     "KIT Karlsruhe",
+    "Karlsruhe Institute of Technology",
     "Backend Development",
     "Artificial Intelligence",
     "Machine Learning",
     "Large Language Models",
-    "RAG",
+    "Retrieval Augmented Generation",
     "Python",
     "FastAPI",
-    "Portfolio",
+    "Software Engineering Portfolio",
   ],
 
   openGraph: {
     type: "website",
+    url: siteUrl,
     locale: "en_US",
     title: "Mohit Kumar Singh | Software Engineering & AI",
     description:
-      "Computer Science master's student at KIT Karlsruhe, exploring software engineering, backend systems and artificial intelligence through practical projects.",
+      "Explore software engineering, backend development and artificial intelligence projects by Mohit Kumar Singh, Computer Science master's student at KIT Karlsruhe.",
     siteName: "Mohit Kumar Singh Portfolio",
   },
 
